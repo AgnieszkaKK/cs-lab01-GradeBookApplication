@@ -1,19 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-/*
+
 namespace GradeBook.GradeBooks
 {
-    public class StandardGradeBook
+    public class StandardGradeBook : BaseGradeBook
     {
-        static void StandardGradeBook()
+        
+        
+        public StandardGradeBook(string name) : base(name)
         {
-            string name;
+            name = Name;
+            Type = Enums.GradeBookType.Standard;
 
         }
+       
     }
 
-    public class StandardGradeBook : BaseGradeBook 
-    {
-    } 
-}*/
+}
